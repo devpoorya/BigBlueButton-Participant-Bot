@@ -8,6 +8,7 @@ meetingID = "MyClass"
 securitySalt = "###"
 apiEndpoint = "https://bbb.example.com/bigbluebutton/api/"
 botName = "Participant"
+participantCount = 5
 
 def join(count):
     for x in range(count):
@@ -34,5 +35,5 @@ def create():
     browser.get(url)
 
 create()
-join(30)
+join(participantCount)
 
